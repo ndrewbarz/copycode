@@ -1,0 +1,70 @@
+.menu {
+	display: none;
+}
+
+.header-nav {
+	padding: 0 1rem;
+}
+
+.nav-list {
+	display: flex;
+}
+
+.nav-item {
+	font-size: 0.9rem;
+	font-weight: 600;
+	transition: all 0.1s ease-in-out;
+	margin-left: 1.1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	svg {
+		font-size: 2rem;
+	}
+
+	&:hover {
+		color: #5f5fad;
+	}
+}
+
+.active {
+	color: #5f5fad;
+}
+
+.hide-menu {
+	display: none;
+}
+
+.show-menu {
+	display: flex;
+}
+
+@media screen and (max-width: 900px) {
+
+	// Доделать меню
+	.header-nav {
+		position: relative;
+		top: 20px;
+		right: 86px;
+		padding: 0;
+
+		ul {
+			flex-direction: column;
+			position: absolute;
+			background: #fff;
+
+			li a {
+				margin-left: 0;
+				padding: .3rem;
+			}
+		}
+	}
+
+	.menu {
+		display: block;
+		margin-right: 3rem;
+		cursor: pointer;
+	}
+}

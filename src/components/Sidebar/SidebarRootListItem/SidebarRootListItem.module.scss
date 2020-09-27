@@ -1,0 +1,29 @@
+.SidebarRootListItemBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  width: 100%;
+  background: #f6f8fb;
+  cursor: pointer;
+  outline: none;
+
+  &:active,
+  &:focus {
+    border: none;
+  }
+
+  svg {
+    margin-right: 1rem;
+  }
+}
+
+.SidebarRootListTitle {
+  font-weight: bold;
+  font-size: 1.07rem;
+  color: #343a40;
+
+  &:hover {
+    color: #1b1d25;
+  }
+}

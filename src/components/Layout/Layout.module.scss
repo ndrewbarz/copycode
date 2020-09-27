@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+.Layout {
+	width: 100%;
+	font-family: 'Comfortaa';
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background: #f6f8fb;
+
+}
+
+.content {
+	margin: 0 auto;
+	width: 100%;
+	flex-grow: 1;
+}
+
+.container {
+	display: flex;
+	margin: 0 auto;
+	max-width: 1140px;
+}

@@ -1,0 +1,43 @@
+.Header {
+	background: #fff;
+	padding: 0.2rem 0;
+	width: 100%;
+	position: fixed;
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+	z-index: 110;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	max-width: 1140px;
+}
+
+.header-logo {
+	width: 100%;
+	max-width: 100px;
+
+	img {
+		width: 100%;
+	}
+}
+
+
+
+@media screen and (max-width: 900px) {
+	.header-logo {
+		margin: 0 0 0 3rem;
+
+		img {
+			max-width: 70px;
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.header-logo {
+		max-width: 60px;
+	}
+}

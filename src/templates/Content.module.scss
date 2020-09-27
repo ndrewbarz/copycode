@@ -1,0 +1,14 @@
+.Content {
+	position: relative;
+	width: 100%;
+	max-width: 750px;
+	margin: 5rem 0 0 220px;
+	padding: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+	.Content {
+		margin: 5rem auto;
+		padding: 2rem;
+	}
+}
