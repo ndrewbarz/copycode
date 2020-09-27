@@ -1,13 +1,10 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import { useMediaQuery } from "react-responsive"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import menu from "../../images/menu.svg"
-import {
-  faHome,
-  faFolderOpen,
-  faInfoCircle,
-} from "@fortawesome/free-solid-svg-icons"
+import homeIcon from "../../images/menu-icons/home.svg"
+import docsIcon from "../../images/menu-icons/docs.svg"
+import aboutIcon from "../../images/menu-icons/about.svg"
 import classes from "./Menu.module.scss"
 
 const Menu = () => {
@@ -40,7 +37,7 @@ const Menu = () => {
               activeClassName={classes.active}
               to="/"
             >
-              <FontAwesomeIcon icon={faHome} />
+              <img src={homeIcon} alt="" />
               Home
             </Link>
           </li>
@@ -50,7 +47,7 @@ const Menu = () => {
               activeClassName={classes.active}
               to="/docs"
             >
-              <FontAwesomeIcon icon={faFolderOpen} />
+              <img src={docsIcon} alt="" />
               Docs
             </Link>
           </li>
@@ -60,7 +57,7 @@ const Menu = () => {
               activeClassName={classes.active}
               to="/about"
             >
-              <FontAwesomeIcon icon={faInfoCircle} />
+              <img src={aboutIcon} alt="" />
               About
             </Link>
           </li>
