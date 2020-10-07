@@ -5,7 +5,7 @@ import classes from "./Search.module.scss"
 const Search = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark {
+      allMdx {
         nodes {
           frontmatter {
             title
@@ -20,7 +20,7 @@ const Search = () => {
     }
   `)
 
-  const nodes = data.allMarkdownRemark.nodes.map(node => node)
+  const nodes = data.allMdx.nodes.map(node => node)
   const [searchTerm, setSearchTerm] = useState("")
   const handleChange = e => {
     setSearchTerm(e.target.value)

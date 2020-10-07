@@ -9,7 +9,7 @@ import classes from "./Sidebar.module.scss"
 const Sidebar = () => {
   const data = useStaticQuery(graphql`
     query {
-      docs: allMarkdownRemark(sort: { fields: fields___priority }) {
+      docs: allMdx(sort: { fields: fields___priority }) {
         group(field: fields___category) {
           edges {
             node {
